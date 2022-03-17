@@ -1,20 +1,11 @@
-import React from 'react';
-
-import { Header } from './Header';
+import React from 'react'; 
 import './page.css';
 
 export const Page = () => {
   const [user, setUser] = React.useState();
 
   return (
-    <article>
-      <Header
-        user={user}
-        onLogin={() => setUser({ name: 'Jane Doe' })}
-        onLogout={() => setUser(undefined)}
-        onCreateAccount={() => setUser({ name: 'Jane Doe' })}
-      />
-
+    <article> 
       <section>
         <h2>Pages in Storybook</h2>
         <p>
